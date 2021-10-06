@@ -1,0 +1,42 @@
+.item {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  transition: all 0.2s linear;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.status {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.online {
+  composes: status;
+  background-color: #0a3800;
+}
+
+.offline {
+  composes: status;
+  background-color: #ff0000;
+}
+
+.avatar {
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
